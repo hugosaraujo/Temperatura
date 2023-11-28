@@ -8,7 +8,7 @@ public class Main {
                    Temperatura em Fahrenheit: %.1f
                 """.formatted(temperaturaEmCelsius, temperaturaEmFahrenheit);
 
-        System.out.println(String.format(textoTemperatura));
+        System.out.println(textoTemperatura);
 
     }
 }
