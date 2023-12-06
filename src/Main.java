@@ -1,6 +1,12 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        double temperaturaEmCelsius = 27.5;
+        Scanner leitura = new Scanner(System.in);
+
+        System.out.print("Informe a temperatura em Celsius que deseja converter: ");
+        double temperaturaEmCelsius = leitura.nextDouble();
+
         double temperaturaEmFahrenheit = ((temperaturaEmCelsius * 1.8) + 32);
 
         String textoTemperatura = """
@@ -9,6 +15,5 @@ public class Main {
                 """.formatted(temperaturaEmCelsius, temperaturaEmFahrenheit);
 
         System.out.println(textoTemperatura);
-
     }
 }
